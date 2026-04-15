@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  mode: debug
+
+database:
+  driver: sqlite
+  path: ./data/market.db
+
+jwt:
+  secret: change-me-in-production
