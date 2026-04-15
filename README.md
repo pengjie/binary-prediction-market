@@ -71,15 +71,15 @@ flowchart TD
     A[事件初始化] --> B[资金调度模块]
     A --> C[风险控制模块]
     A --> D[价格引擎]
-    
+
     D --> E[影子价格]
-    E --> F[价格调节<br/>(向心力 Anchor)]
-    
+    E --> F[价格调节<br>(向心力 Anchor)]
+
     B --> G[交易感知器]
-    G --> H[点差调节<br/>(呼吸力 Spread)]
-    
+    G --> H[点差调节<br>(呼吸力 Spread)]
+
     C --> I[库存探测器]
-    I --> J[库存调节<br/>(重心力 Skew)]
+    I --> J[库存调节<br>(重心力 Skew)]
     
     H --> K[铺单引擎<br/>紧急熔断]
     F --> K
@@ -141,9 +141,9 @@ flowchart TD
 flowchart TD
     Start[事件初始化] --> Input[价格引擎读取输入]
     Input --> Shadow[计算影子价格]
-    Shadow --> Spread[交易感知器 → 计算 Spread<br/>呼吸力点差调节]
-    Shadow --> Skew[库存探测器 → 计算 Skew<br/>重心力库存调节]
-    Shadow --> Anchor[价格调节 → Anchor<br/>向心力锚定到影子价格]
+    Shadow --> Spread[交易感知器 → 计算 Spread<br>呼吸力点差调节]
+    Shadow --> Skew[库存探测器 → 计算 Skew<br>重心力库存调节]
+    Shadow --> Anchor[价格调节 → Anchor<br>向心力锚定到影子价格]
     Spread --> Agg[铺单引擎汇总三力输出]
     Skew --> Agg
     Anchor --> Agg
