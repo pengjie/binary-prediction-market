@@ -36,7 +36,7 @@
 
 ### 项目结构
 ```
-golang-claude/
+binary-prediction-market/
 ├── cmd/
 │   ├── server/           # API 服务入口
 │   └── backtest/         # 回测命令行工具
